@@ -10,5 +10,7 @@ docker run --cap-add=NET_ADMIN --device=/dev/net/tun -d \
 --log-driver json-file \
 --log-opt max-size=10m \
 -p 8181:9091 \
---dns 8.8.8.8 --dns 8.8.4.4 \
+--dns 8.8.8.8 \
+--dns 8.8.4.4 \
 --name=xm-ovpn \
+teosoft/dto
