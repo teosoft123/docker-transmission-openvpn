@@ -7,6 +7,7 @@ VOLUME /config
 # Update packages and install software
 RUN apt-get update \
     && apt-get -y upgrade \
+    && apt-get install vim dnsutils -y \
     && apt-get -y install software-properties-common wget git \
 #    && add-apt-repository ppa:transmissionbt/ppa \
     && wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg | apt-key add - \
