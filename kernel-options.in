@@ -1,0 +1,8 @@
+# Check current values like so:
+# sysctl net.core.rmem_max
+# sysctl net.core.wmem_max
+# If current values are smaller,
+# add these to /etc/sysctl.conf
+#
+net.core.rmem_max = 4194304
+net.core.wmem_max = 1048576
